@@ -6,3 +6,15 @@ requires-python = ">=3.13"
 name = "hexlet-code"
 version = "0.1.0"
 source = { editable = "." }
+dependencies = [
+    { name = "pypi" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "pypi", specifier = ">=2.1" }]
+
+[[package]]
+name = "pypi"
+version = "2.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/32/d2/8fb6f6a37af408d52dae28b4ff999e0d11b936729661c93d242ffbdb0a77/pypi-2.1.tar.gz", hash = "sha256:f014c87f871c2143ff613d9d13a59cc8ab8309b048754c27da8c58b21de2c10d", size = 997 }
