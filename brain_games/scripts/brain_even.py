@@ -1,10 +1,9 @@
-import brain_games.brain_even_game_logic
+import brain_games.games.even.even_game_logic
 
 
 def main():
-    brain_games.brain_even_game_logic.welcome_user()
-    brain_games.brain_even_game_logic.display_questions_and_get_answers()
-
-
+    brain_games.games.even.even_game_logic.even_game()
+    
+    
 if __name__ == "__main__":
     main()
