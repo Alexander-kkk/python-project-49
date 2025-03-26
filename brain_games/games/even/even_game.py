@@ -25,6 +25,6 @@ def even_game():
         number, true_answer = get_number_and_true_answer()
         brain_games.games.engine.print_question(number)
         answer = brain_games.games.engine.get_answer()
-        brain_games.games.engine.comparison(answer, true_answer, count_of_correct_answers)
+        brain_games.games.engine.comparison(answer, true_answer, count_of_correct_answers)  # noqa: E501
         count_of_correct_answers += 1
 
