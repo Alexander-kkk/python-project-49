@@ -19,14 +19,17 @@ def get_answer():
     return answer
 
 
-def comparison(answer, true_answer, count_of_correct_answers):
-    if count_of_correct_answers == count_of_rounds:
-        print(f'Congratulations, {name}!')
-        exit()
-    if answer.lower() == true_answer:
+def comparison(answer, true_answer):
+    if answer == true_answer:
         print('Correct!')
     else:
         print(f"'{answer}' is wrong answer ;(.")
         print(f"Correct answer was '{true_answer}'")
         print(f"Let's try again, {name}")
+        exit()
+
+
+def congratulation(count_of_correct_answers):
+    if count_of_correct_answers == count_of_rounds:
+        print(f'Congratulations, {name}!')
         exit()
