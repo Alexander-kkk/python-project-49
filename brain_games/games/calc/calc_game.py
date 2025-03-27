@@ -13,13 +13,13 @@ def generate_number_and_true_answer():
     num2 = get_random_number()
     operation = choice(operations)
     if operation == '+':
-        true_answer = str(num1 + num2)
+        true_answer = num1 + num2
     elif operation == '-':
-        true_answer = str(num1 - num2)
+        true_answer = num1 - num2
     elif operation == '*':
-        true_answer = str(num1 * num2)
+        true_answer = num1 * num2
     number = f"{num1} {operation} {num2}"
-    return number, true_answer
+    return number, str(true_answer)
 
 
 def calc_game():
