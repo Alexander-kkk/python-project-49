@@ -1,5 +1,10 @@
 import prompt
 
+import brain_games.games.calc.calc_game
+import brain_games.games.even.even_game
+import brain_games.games.gcd.gcd_game
+import brain_games.games.progression
+
 count_of_rounds = 3
 
 
@@ -33,3 +38,16 @@ def congratulation(count_of_correct_answers):
     if count_of_correct_answers == count_of_rounds:
         print(f'Congratulations, {name}!')
         exit()
+
+
+def play_game(game_module):
+    brain_games.games.engine.welcome_user()
+    print(game_module.description)
+    count_of_correct_answers = 0
+    for i in range(count_of_rounds):
+        number, true_answer = game_module.generate_number_and_true_answer()
+        print_question(number)
+        answer = get_answer()
+        comparison(answer, true_answer)
+        count_of_correct_answers += 1
+        congratulation(count_of_correct_answers)
