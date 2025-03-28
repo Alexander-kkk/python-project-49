@@ -27,7 +27,7 @@ def generate_number_and_true_answer():
 
 def progression_game():
     brain_games.games.engine.welcome_user()
-    print('What number is missing in the progression?')
+    print('What number is missing in the progression ?')
     count_of_correct_answers = 0
     for i in range(brain_games.games.engine.count_of_rounds):
         number, true_answer = generate_number_and_true_answer()
