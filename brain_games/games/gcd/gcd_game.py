@@ -1,7 +1,6 @@
-
 from random import randint
 
-import brain_games.games.engine
+description = 'Find the greatest common divisor of given numbers.'
 
 
 def get_random_number():
@@ -17,16 +16,4 @@ def generate_number_and_true_answer():
         if num1 % i == 0 and num2 % i == 0:
             true_answer = str(i)
             return number, true_answer
-        
 
-def gcd_game():
-    brain_games.games.engine.welcome_user()
-    print('Find the greatest common divisor of given numbers.')
-    count_of_correct_answers = 0
-    for i in range(brain_games.games.engine.count_of_rounds):
-        number, true_answer = generate_number_and_true_answer()
-        brain_games.games.engine.print_question(number)
-        answer = brain_games.games.engine.get_answer()
-        brain_games.games.engine.comparison(answer, true_answer)
-        count_of_correct_answers += 1
-        brain_games.games.engine.congratulation(count_of_correct_answers)   
