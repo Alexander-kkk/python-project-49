@@ -30,7 +30,7 @@ def comparison(answer, true_answer):
     else:
         print(f"'{answer}' is wrong answer ;(.")
         print(f"Correct answer was '{true_answer}'")
-        print(f"Let's try again, {name}")
+        print(f"Let's try again, {name}!")
         exit()
 
 
