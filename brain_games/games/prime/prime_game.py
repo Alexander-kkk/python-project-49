@@ -1,7 +1,7 @@
 from random import randint
 
-description = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-count_of_divisors_prime_number = 2
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+COUNT_OF_DIVISORS_PRIME_NUMBER = 2
 
 
 def get_random_number():
@@ -13,7 +13,7 @@ def is_prime(number):
     for i in range(1, number + 1):
         if number % i == 0:
             count += 1
-    if count == count_of_divisors_prime_number:
+    if count == COUNT_OF_DIVISORS_PRIME_NUMBER:
         return True
 
 

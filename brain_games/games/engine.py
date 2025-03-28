@@ -42,7 +42,7 @@ def congratulation(count_of_correct_answers):
 
 def play_game(game_module):
     brain_games.games.engine.welcome_user()
-    print(game_module.description)
+    print(game_module.DESCRIPTION)
     count_of_correct_answers = 0
     for i in range(count_of_rounds):
         number, true_answer = game_module.generate_number_and_true_answer()
