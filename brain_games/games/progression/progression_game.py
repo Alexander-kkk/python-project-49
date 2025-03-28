@@ -13,9 +13,10 @@ def generate_number_and_true_answer():
     start = get_random_number()
     step = get_random_number()
     random_number = randrange(start, length_of_numbers * step, step)
+    end = start + (length_of_numbers * step)
     list_of_numbers = ''
     
-    for i in range(start, length_of_numbers * step, step):
+    for i in range(start, end, step):
         if i == random_number:
             list_of_numbers += '..' + ' '
             true_answer = i
