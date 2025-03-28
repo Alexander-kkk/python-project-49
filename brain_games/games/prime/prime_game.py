@@ -1,6 +1,6 @@
 from random import randint
 
-description = '"yes" if given number is prime. Otherwise answer "no"'
+description = '"yes" if given number is prime. Otherwise answer "no".'
 count_of_divisors_prime_number = 2
 
 
